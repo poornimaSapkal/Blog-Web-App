@@ -1,0 +1,19 @@
+{
+  "name": "blog-web-app",
+  "version": "1.0.0",
+  "description": "Blog Web App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poornimaSapkal/Blog-Web-App.git"
+  },
+  "author": "Poornima Sapkal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poornimaSapkal/Blog-Web-App/issues"
+  },
+  "homepage": "https://github.com/poornimaSapkal/Blog-Web-App#readme"
+}
