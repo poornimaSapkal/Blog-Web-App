@@ -110,6 +110,18 @@ app.put("/blogs/:id", function(req, res){
     });
 });
 
+//===DELETE ROUTE
+app.delete("/blogs/:id", function(req, res){
+    var id = req.params.id;
+    blogPost.findByIdAndDelete(id, function(err, post){
+        if (err){
+            res.redirect("/blogs");
+        } else {
+            res.redirect("/blogs");
+        }
+    });
+});
+
 //===SETUP THE SERVER
 app.listen("3000", function(){
     console.log("Server is up and running!")
