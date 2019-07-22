@@ -105,7 +105,7 @@ app.put("/blogs/:id", function(req, res){
             console.log("Something went wrong!");
             res.redirect("/blogs")
         } else {
-            res.render("/blogs/"+req.params.id);
+            res.redirect("/blogs/"+req.params.id);
         }
     });
 });
