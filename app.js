@@ -69,7 +69,20 @@ app.post("/blogs", function(req, res){
     });
 });
 
-//===SETUP THE š
+//===SHOW ROUTE
+app.get("/blogs/:id", function(req, res){
+    var id = req.params.id;
+    blogPost.findById(id, function(err, post){
+        if(err){
+            console.log("There was an error!");
+            res.redirect("/blogs");
+        } else {
+            res.render("show", {post:post});
+        }
+    });
+});
+
+//===SETUP THE SERVER
 app.listen("3000", function(){
     console.log("Server is up and running!")
 });

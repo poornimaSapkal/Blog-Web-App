@@ -5,7 +5,8 @@
     <div>
         <h2><%=posts[i].title %></h2>
         <img src="<%=posts[i].image%>" alt="" style="width: 300px; height: 200px;">
-        <p><%=posts[i].body%></p>
+        <p><%=posts[i].body.substring(0,100)%>...</p>
+        <a href="/blogs/<%=posts[i]._id%>">Read More</a>
     </div>
    
 <%}%>
