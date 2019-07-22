@@ -1,0 +1,12 @@
+<% include ./partials/header%>
+<h1>This is the index page!</h1>
+
+<%for(var i=0; i<posts.length; i++){%>
+    <div>
+        <h2><%=posts[i].title %></h2>
+        <img src="<%=posts[i].image%>" alt="" style="width: 300px; height: 200px;">
+        <p><%=posts[i].body%></p>
+    </div>
+   
+<%}%>
+<% include ./partials/footer%>
