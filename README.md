@@ -4,11 +4,19 @@ This is a RESTful blog app implemented with CRUD functionality.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development purposes.
 
-### Prerequisites
+
+### Installing
+
+1. Install VS Code
+2. Install NodeJS 
+3. Install MongoDB
+
 
 You can refer to the package.json file and install all the dependencies mentioned therein once you've got the environment setup. 
+
+npm install package-name
 
 ```
 1. body-parser
@@ -17,68 +25,31 @@ You can refer to the package.json file and install all the dependencies mentione
 4. express-sanitizer
 5. method-override
 6. mongoose
+7. nodemon (not required but recommended)
 
+//nodemon eliminates the need to restart the server every time a change is made.
 ```
 
-### Installing
+## Functionality 
 
-1. Install NodeJS 
-2. Install MongoDB
+The index page dispplays all the blog posts that are in the database. 
 
-```
+![ScreenShot](https://github.com/poornimaSapkal/Blog-Web-App/blob/master/images/index.png)
 
-End with an example of getting some data out of the system or using it for a little demo
+The New Post page allows the user to create a new blog post, It directs the user to a form where the user fills in information of the blogpost and is the redirected to the index page. 
 
-## Running the tests
+![ScreenShot](https://github.com/poornimaSapkal/Blog-Web-App/blob/master/images/new.png)
 
-Explain how to run the automated tests for this system
 
-### Break down into end to end tests
+On clicking a blog post, the user is directed to a show page which give the user more information about that specific blogpost.
 
-Explain what these tests test and why
 
-```
-Give an example
-```
+![ScreenShot](https://github.com/poornimaSapkal/Blog-Web-App/blob/master/images/show.png)
 
-### And coding style tests
+The Update button directs the user to another form where the user can update certain details about the blogpost. 
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-![Alt desc](https://github.com/poornimaSapkal/Blog-Web-App/blob/master/images/index.png)
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+![ScreenShot](https://github.com/poornimaSapkal/Blog-Web-App/blob/master/images/update.png)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
