@@ -1,6 +1,6 @@
 # Blog Web App
 
-This is a blog web app implemented with CRUD functionality. 
+This is a blog web app implemented with CRUD functionality and RESTful routing.
 
 ## Getting Started
 
@@ -57,6 +57,10 @@ The Update button directs the user to another form where the user can update cer
 
 
 ![ScreenShot](https://github.com/poornimaSapkal/Blog-Web-App/blob/master/images/update.png)
+
+## RESTful Information
+
+![ScreenShot](https://github.com/poornimaSapkal/Blog-Web-App/blob/master/images/rest.png)
 
 ## License
 
