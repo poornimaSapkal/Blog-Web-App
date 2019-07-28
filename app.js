@@ -3,12 +3,14 @@ var app = express();
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
+var expressSanitizer = require('express-sanitizer')
 
 //===CONNECT MONGOOSE TO THE SERVER 
 mongoose.connect("mongodb://localhost/blog_web_app", { useNewUrlParser: true });
 
 mongoose.set('useFindAndModify', false);
 app.use(bodyParser.urlencoded({extended:true}));
+app.use(expressSanitizer())
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(methodOverride("_method"));
@@ -57,7 +59,7 @@ app.get("/blogs/new", function(req, res){
 app.post("/blogs", function(req, res){
     var title = req.body.blog.title;
     var image = req.body.blog.image;
-    var body = req.body.blog.body;
+    var body = req.sanitize(req.body.blog.body);
     blogPost.create({
         title: title,
         image: image,
