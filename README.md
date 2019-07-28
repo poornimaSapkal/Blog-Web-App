@@ -1,6 +1,6 @@
 # Blog Web App
 
-This is a RESTful blog app implemented with CRUD functionality. 
+This is a blog web app implemented with CRUD functionality. 
 
 ## Getting Started
 
