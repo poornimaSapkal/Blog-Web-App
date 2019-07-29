@@ -32,7 +32,7 @@ npm install package-name
 
 ## Functionality 
 
-The index page dispplays all the blog posts that are in the database. 
+The index page displays all the blog posts that are in the database. 
 
 
 ![ScreenShot](https://github.com/poornimaSapkal/Blog-Web-App/blob/master/images/index.png)
