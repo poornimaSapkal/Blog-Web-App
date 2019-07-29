@@ -9,9 +9,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing
 
-1. Install VS Code
-2. Install NodeJS 
-3. Install MongoDB
+1. Install NodeJS 
+2. Install MongoDB
 
 
 You can refer to the package.json file and install all the dependencies mentioned therein once you've got the environment setup. 
