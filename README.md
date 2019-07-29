@@ -7,7 +7,7 @@ This is a blog web app implemented with CRUD functionality and RESTful routing.
 These instructions will get you a copy of the project up and running on your local machine for development purposes.
 
 
-### Installing
+### Installation
 
 1. Install NodeJS 
 2. Install MongoDB
